@@ -54,4 +54,4 @@ jobs:
         uses: snyk/actions/maven@master
         continue-on-error: true
         env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+          SNYK_TOKEN: c3b14594-a249-4b29-b6fd-9d090a8d9236
