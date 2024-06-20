@@ -37,7 +37,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Run Snyk to check for vulnerabilities
-        uses: snyk/actions/node@master
+        uses: snyk/actions/maven@master
         continue-on-error: true
         env:
-          SNYK_TOKEN: be0366c4-1601-45e8-bcc8-dea8085302be
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
